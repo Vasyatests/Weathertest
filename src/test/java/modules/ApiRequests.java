@@ -24,7 +24,7 @@ public class ApiRequests {
   public static float getWeather (){
       //ShowWeather
       Gson gson = new Gson();
-      String vvv = apiRequest("https://api.openweathermap.org/data/2.5/weather?lat=55.752&lon=37.616&appid=ace3c482ec0edcfec570a8f8c274a1e6", "GET", "");
+      String vvv = apiRequest("https://api.openweathermap.org/data/2.5/weather?lat=59.917&lon=30.250&appid=ace3c482ec0edcfec570a8f8c274a1e6", "GET", "");
       String json = null;
       float temp = -100;
       try {

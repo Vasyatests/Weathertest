@@ -33,7 +33,7 @@ public class Api_tests {
             max = Float.parseFloat(System.getenv("Weather_MAX"));
         }
         catch (NumberFormatException | NullPointerException nfe){
-            writeStrToFile(logname, "Error in max|min weather! NumberFormatException: " + nfe.getMessage());
+            writeStrToFile(logname, "Error in max|min temp properties! Will be set default. -- NumberFormatException: " + nfe.getMessage());
         }
         if (min == 9999)  min = -10;
         if (max == -9999)  max = 100;
